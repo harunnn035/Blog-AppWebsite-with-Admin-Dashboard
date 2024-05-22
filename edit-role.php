@@ -20,7 +20,7 @@
         <div class="container form-section-container">
             <h2 class="aca">Edit User Role</h2>
             <?php
-    include("js/baglan.php");
+    include("includes/baglan.php");
 
     // Formdan gelen verileri al
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

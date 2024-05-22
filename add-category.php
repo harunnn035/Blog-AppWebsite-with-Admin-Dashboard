@@ -39,35 +39,9 @@ $conn->close();
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="./index.php" class="logo">
-                <h3 class="bas">Blog Page</h3>
-            </a>
-            <ul class="nav-link">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="sign-in.php">Sign In</a></li>
-                <li>
-                    <div class="nav-profile">
-                        <div class="profile-img">
-                            <img src="Assets/img/portrait-man-laughing.jpg" alt="" width="" height="">
-                        </div>
-                        <ul>
-                            <li><a href="dashboard.php">Dashboard</a></li>
-                            <li><a href="sign-in.php">Log Out</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <button class="phone-button Open"> <i class="fa fa-bars"></i></button>
-            <button class="phone-button Close"> <i class="fa fa-close"></i></button>
-        </div>
-    </nav>
-
+<?php
+include("includes/footer.php");
+    ?>
     <section class="form-section">
         <div class="container form-section-container">
             <h2 class="aca">Add Category</h2>

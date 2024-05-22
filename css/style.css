@@ -1,0 +1,1066 @@
+.sın{
+
+}
+
+
+:root {
+  --color-primary: #6f6af8;
+  --color-primary-variant: hsl(242, 91%);
+  --color-primary-light: hsl(24, 91%, 69%, 18%);
+  --color-danger: #da0f3f;
+  --color-danger-light: hsl(346, 87%, 46%, 15%);
+  --color-success: #00c476;
+  --color-success-light: hsl(156, 100%, 38%, 15%);
+  --color-gray-1: #1e1e66;
+  --color-gray-2: #2d2b7c;
+  --color-nav:#c74444;
+  --color-white: #ffff;
+  --color-light: #ccc;
+  --color-light-variant: #626262;
+  --color-bg: #efefef22;
+--color-category: rgb(194, 96, 96);
+  --border-radius-1: .3rem;
+  --border-radius-2: .5rem;
+  --border-radius-3: .8rem;
+  --border-radius-4: 2rem;
+  --border-radius-5: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  appearance: none;
+  text-decoration: none;
+  
+  font-weight: bold;
+  transition: .4s ease;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 17px;
+  background: var(--color-bg);
+  overflow-x: hidden;
+  color: var(--color-gray-1);
+}
+
+.container {
+  max-width: 1620px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+section {
+  margin-top: 3rem;
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-black);
+  
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: .8rem 0 .5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*...................START NAVBAR........................*/
+
+nav {
+
+  height: 5rem;
+  width: 100vw;
+  position: fixed;
+  background: var(--color-gray-2);
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+nav .phone-button {
+  display: none;
+}
+
+
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 40px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 3px solid whitesmoke;
+  overflow: hidden;
+  transition: width 0.8s ease, height 0.8s ease; /* Geçiş efektleri ekleyin */
+ 
+}
+.profile-img:hover{
+
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 70%;
+  overflow: hidden;
+
+}
+
+
+
+
+nav .logo h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--color-white);
+
+}
+
+.bas:hover{
+font-size: 29px;
+}
+
+.bas:active{
+  font-size: 26px;
+
+}
+
+nav .logo h3 span {
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+nav .nav-link {
+  display: flex;
+  gap: 3.5rem;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-link li a:active{
+color: rgb(51, 47, 47);
+
+}
+
+.nav-link a {
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+.nav-link a:hover {
+  color: black;
+ 
+
+}
+
+nav .nav-profile {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-profile ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 125%;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  border-radius: var(--border-radius-1);
+  overflow: hidden;
+}
+
+.nav-profile ul li a {
+  display: block;
+  padding: 1rem;
+  background: var(--color-success);
+  
+
+}
+
+.nav-profile ul li:last-child a {
+
+  background: var(--color-danger);
+}
+
+.nav-profile:hover ul {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+/*........................END NAVBAR......................*/
+
+
+/*........................START Category button......................*/
+
+.category-btn{
+background: rgb(0, 34, 255);
+display: inline-block;
+color : rgb(255, 255, 255);
+padding: .5rem 1rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.category1{
+
+  background: rgb(0, 34, 255);
+display: inline-block;
+color : rgb(255, 255, 255); 
+padding: .5rem 1rem;
+}
+
+
+.category1:hover{
+  color: var(--color-white);
+  cursor: default;
+  }
+  
+
+
+
+.category-btn:hover{
+color: var(--color-white);
+cursor: default;
+}
+
+
+
+/*........................END Category button......................*/
+
+
+/*........................START General Post.....................*/
+.post-thumb{
+border-radius: var(--border-radius-5) 0;
+overflow: hidden;
+margin-bottom:1rem ;
+border:  .5rem solid var(--color-gray-1);
+
+/*  bir elementin içeriği kadar yükseklik almasını sağlar. */
+
+}
+.post-profile{
+display: flex;
+gap: 1rem;
+margin-top: 1.2rem;
+
+}
+
+.post-profile-img{
+height: 3.2rem;
+width: 3.2rem;
+overflow: hidden;
+border-radius: 50% ;
+background-color: rgb(255, 255, 255);
+}
+
+.post-container {
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduced spacing between posts */
+}
+
+.post-search{
+  
+  margin-left: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduced spacing between posts */
+}
+
+.post-item {
+  flex: 0 0 calc(50% - 10px); /* Adjusted for reduced gap */
+  max-width: calc(75% - 10px); /* Adjusted for reduced gap */
+  margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+
+.post-search {
+  flex: 0 0 calc(15% - 10px); /* Adjusted for reduced gap */
+  max-width: calc(60% - 10px); /* Adjusted for reduced gap */
+  padding-top: 50px ;
+}
+
+@media screen and (max-width: 768px) {
+  .post-item {
+      flex-basis: calc(100% - 10px); /* Adjusted for reduced gap on mobile */
+      max-width: calc(100% - 10px); /* Adjusted for reduced gap on mobile */
+  }
+}
+
+
+small{
+color: var(--color-light-variant);
+
+}
+/*........................END General Post.....................*/
+
+
+/*........................Start Featured Post.....................*/
+
+
+.yusuf{
+color:black;
+
+}
+.Featured{
+margin-top: 8rem;
+}
+
+.featured-container{
+display: grid;
+grid-template-columns: 1fr 1fr; /*sütun oluşturur belirli bir düzen verir*/
+gap: 4rem; /* satır ve sütunlar arasında boşlukları belirlerç*/
+}
+
+.Featured .post-thumb{
+  height: fit-content;
+}
+/*........................END Featured Post.....................*/
+
+
+
+
+/*........................Start Post.....................*/
+.post-container{
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5rem;
+  margin-bottom: 5rem auto;
+}
+
+.post .post-thumb{
+  border: .3rem solid rgb(150, 25, 25);
+  border-radius: var(--border-radius-4) 0;
+
+}
+/*........................END  Post.....................*/
+
+
+
+
+
+/*........................Start Category Btn.....................*/
+
+.category-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+width: fit-content;
+gap: 1rem;
+text-align: center;
+}
+
+.Category{
+padding: 4rem 0;
+border-top: 2px solid var(--color-category);
+border-bottom: 2px solid var(--color-category);
+background: rgb(73, 69, 69);
+
+}
+
+/*........................END Category Btn.....................*/
+
+
+
+
+
+/*........................Start FOOTER.....................*/
+footer{
+background: var(--color-gray-1);
+padding-top: 5rem ;
+box-shadow: inset 0 1.5rem 1.5rem rgba(0, 0, 0, 0.2);
+
+}
+.footer-social{
+display: flex;
+margin-inline: auto ;
+width: fit-content;
+justify-content: space-between;
+align-items:  center;
+gap: 1.2rem;
+
+}
+
+.footer-social a{
+background: var(--color-bg);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 2.3rem;
+width: 2.3rem;
+color: white;
+}
+
+.footer-social a:hover{
+background: var(--color-white);
+color: var(--color-black);
+
+}
+
+.footer-container{
+display: flex;
+justify-content: space-between;
+margin-top: 5rem;
+
+}
+.footer-container ul li a{
+color: white;
+display: inline-block;
+opacity: 0.75;
+}
+.footer-container ul li a:hover{
+  color:var(--color-danger);
+}
+.footer-container h4{
+  color: var(--color-light);
+  margin-bottom: 1rem;
+
+}
+.footer-copy{
+color: white;
+text-align: center;
+padding: 1.5rem 0;
+border-top: var(--color-bg) 2px solid;
+margin-top: 3rem;
+}
+
+/*........................END FOOTER.....................*/
+
+/* Global Styles */
+:root {
+  --color-nav: #ffffff; /* Change to desired color */
+  --color-light: #888888; /* Change to desired color */
+  --border-radius-2: 8px; /* Change to desired border radius */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin-top: 8rem; /* Adjust as needed */
+}
+
+.search-container {
+  width: 30rem; /* Adjust width as needed */
+  background: var(--color-nav);
+  padding: .6rem 1rem;
+  border-radius: var(--border-radius-2);
+}
+
+.search-container>div {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  background: transparent;
+  padding: .5rem 0;
+  width: 100%;
+  margin-left: .7rem;
+  border: none; /* Remove border if not needed */
+  border-bottom: 1px solid var(--color-light); /* Add bottom border for input */
+}
+
+.search-container input::placeholder {
+  color: var(--color-light);
+}
+
+.btn1 {
+  background-color: #0955f9; /* Change to desired button color */
+  color: #000000; /* Change to desired text color */
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+  margin-left: .5rem; /* Adjust margin as needed */
+}
+
+.btn1:hover{
+  background-color: #3870e9;
+}
+
+.btn1:active{
+  color: #ffffff;
+  background-color: #000dff;
+}
+
+/*......................Blog Page Seach BAR END.........................*/
+
+
+
+
+
+/*......................Singele post start.........................*/
+.singele-post{
+margin: 8rem 0 2rem;
+
+}
+
+.singele-post-container{
+width: 40rem;
+padding: 1rem 2rem 2rem;
+background:var(--color-danger) ;
+color:var(--color-white);
+}
+
+.singele-post h5,
+.singele-post h2{
+  color: white;
+}
+
+.singele-post p{
+margin-top: 1rem;
+line-height: 1.7;
+}
+
+.singele-post .singele- post-thumb{
+  margin-top: 1.5rem;
+}
+
+
+
+
+/*......................singele post end.........................*/
+
+/*......................categories page start.........................*/
+.category-title{
+  height: 15rem;
+  margin-top: 5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-danger);
+}
+.category-title h2{
+  color: #ccc;
+}
+
+/*....................categories page end......................*/
+
+
+
+
+
+
+/*........................empty page start.................*/
+.empty-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 4.5rem;
+  height: 20rem;
+  }
+  /*........................empty page end.................*/
+
+
+
+ /*........................Start Sign Up page.................*/
+ .form-section{
+height: 100vh;
+display: grid;
+place-items: center;
+ }
+.form-section-container{
+width: 30rem;
+}
+
+.message-alert{
+  padding: .8rem 1rem;
+  margin-bottom: 1rem;
+ 
+  border-radius: var(--border-radius-1);
+}
+.message-alert-error{
+  background:var(--color-danger-light) ;
+}
+
+.message-alert-success2{
+  font-size: 1rem;
+background:rgba(0, 253, 13, 0.088);
+  
+
+}
+
+
+.message-alert-success{
+  font-size:1rem;
+  background:rgba(0, 253, 13, 0.088);
+ 
+
+
+}
+
+
+   form{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+
+}
+
+
+input[type="checkbox"]:checked {
+  background-color: rgb(1, 103, 255);
+  
+}
+
+
+.form-control{
+  display: flex;
+flex-direction: column;
+gap: .4rem;
+}
+input,
+textarea,
+select{
+  padding: 0.8rem 1.4rem;
+  background: var(--color-gray-2);
+  border-radius: var(--border-radius-1);
+  resize: none;
+  color: white;
+}
+
+body{
+
+  background-color: #6ca5d046;
+}
+
+form small {
+ display: flex;
+gap: .5rem;
+ align-items: center;
+ margin-top: 1rem;
+
+}
+
+form small a{
+  font-size: 19px;
+  color: var(--color-success);
+}
+
+.inline{
+  display: flex;
+  gap:.5rem;
+  flex-direction: row;
+  width: fit-content;
+ 
+}
+
+.red{
+background: var(--color-danger)!important;
+
+}
+/*........................END SİGN UP PAGE.................*/
+
+
+
+    /*........................Start Dashboard.................*/
+.dashboard{
+  margin-top: 8rem;
+  
+}
+.dashboard-container{
+  display: grid;
+  grid-template-columns: 14rem auto;
+  padding: 2rem;
+  margin-bottom: 7rem;
+  gap: 1rem;
+ background: rgb(39, 3, 129);
+ color: var(--color-white);
+
+}
+
+.dashboard-container a,
+.dashboard-container h2,
+.dashboard-container h5{
+  color: var(--color-white);
+}
+.dashboard aside a  {
+  background: var(--color-primary);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.6rem;
+ 
+  
+  margin-top: 6px;
+}
+.dashboard aside ul li:last-child a{
+  border-bottom: none;
+}
+.dashboard aside a:hover{
+  background:rgb(39, 3, 129);
+}
+.dashboard .active:active{
+  background: var(--color-gray-2);
+}
+
+.dashboard main{
+  margin-left:1.5rem;
+  
+}
+.dashboard h2{
+margin: 0 0 2rem 0;
+}
+.dashboard table{
+  text-align: left;
+  width: 100%;
+}
+.dashboard table th{
+  padding: .8rem ;
+  background: rgb(80, 80, 210);
+}
+.dashboard table td{
+  padding: .8rem ;
+  border-bottom: 3px solid rgb(52, 26, 119);;
+}
+      /*........................end Dashboard.................*/
+
+
+
+
+
+/*....................Custom BUTTON Start......................*/
+.btn{
+  display: inline-block;
+  width: fit-content;
+  padding: .6rem 1.2rem;
+  background: rgb(158, 29, 29);
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+  color: white;
+  box-shadow: black;
+  border: 2px solid rgb(98, 30, 30);
+  
+  }
+  
+  .btn:hover{
+  opacity: 0.75;
+  
+  }
+  
+  .sm{
+padding: .3rem 0.7rem;
+  }
+
+  .danger{
+    background: red;
+  }
+
+  .btn:active{
+  background-color: #da0f3f;
+  opacity: 100%;
+  
+  }
+  
+  .btn{
+    margin-bottom: 1rem;
+  }   
+  
+/*....................Custom BUTTON END......................*/
+
+
+/*........................MEDIA SCREEN START.....................*/
+/* MAX WIDTH 1024PX */
+@media (max-width:1024px){
+ h2{
+font-size: 1.6rem ;
+ }
+ 
+.sup ,.sın ,.aca{
+  font-size: 2.3rem;
+}
+
+
+ h3{
+  font-size: 1.2rem;
+ }
+
+
+ h5{
+font-size:  .8rem ;
+ }
+/*..............NAV...............*/
+nav .phone-button{
+display: inline-block;
+font-size: 2rem;
+background: transparent;
+color: var(--color-white);
+cursor: pointer;
+}
+
+nav .Close{
+display: none;
+}
+
+.nav-container{
+position: relative;
+
+}
+nav .nav-link{
+position: absolute;
+right: 0;
+flex-direction: column;
+gap: 0 !important; 
+width: 12rem;
+align-items: flex-start;
+justify-content: center;
+top: 5rem;
+display: none;
+}
+
+.nav-link  li{
+width: 100%;
+display: flex;
+align-items: center;
+height: 4.5rem;
+box-shadow: 2rem 3rem 7rem rgba(0, 0, 0, 0.7);
+animation: ANI 400ms 0s ease forwards;
+opacity: 0;
+transform-origin: top ;
+}
+.nav-link li:nth-child(2){ animation-delay: 200ms;}
+
+.nav-link li:nth-child(3){ animation-delay: 250ms;}
+
+.nav-link li:nth-child(4){ animation-delay: 300ms;}
+
+.nav-link li:nth-child(5){ animation-delay: 350ms;}
+
+.nav-link li:nth-child(6){ animation-delay: 400ms;}
+.nav-link li:nth-child(7){ animation-delay: 450ms;}
+
+@keyframes ANI {
+  0%{
+transform: rotateX(90deg);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+.nav-link li a{
+
+  width: 100%;
+  height: 100%;
+  background:  var(--color-gray-1);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+
+}
+
+.nav-link li a:hover{
+  opacity: 0.80 ;
+  color: white;
+}
+
+nav ul li:last-child{
+  background:  var(--color-gray-1); 
+}
+
+.nav-profile{
+margin: 0 auto;
+
+}
+/*..............Featured.................*/
+.featured-container{
+  gap: 3rem ;
+  width: 80%;
+  grid-template-columns: 1fr;
+}
+
+
+/*..............Post.................*/
+.post-container{
+grid-template-columns: 1fr 1fr; 
+gap: 4rem;
+}
+
+
+/*......................Single post.........................*/
+.singele-post-container{
+  padding: 1.8rem;
+  width: 70%;
+}
+/*....................dashboard.................*/
+.dashboard-container{
+
+  grid-template-columns: 4.5rem auto;
+  padding: 0;
+  background: none;
+color: black;
+gap: 0;
+}
+.dashboard aside h5{
+display: none;
+}
+
+.dashboard h2{
+  color: black;
+  }
+
+  .dashboard table th{
+    display: none;
+
+  }
+
+  
+/*....................dashboard.................*/
+}
+
+
+
+/* MX WIDTH:600PX*/
+@media (max-width:600px){
+  .dashboard-container{
+
+    grid-template-columns: 6 auto;
+    padding: 0;
+    background: none;
+  color: black;
+  gap: 0;
+  }
+
+  .featured-container{
+   
+    width: 85%;
+    grid-template-columns: 1fr;
+    gap: 0.5rem ;
+  }
+
+  .post-container{
+    grid-template-columns: 1fr ; 
+    gap: .5rem;
+    
+}
+
+.post{
+
+  margin-top: 5rem;
+}
+
+  
+.category-container{
+
+    grid-template-columns: 1fr 1fr; 
+   width: 90%;
+}
+
+.footer-container{
+flex-direction: column;
+gap: 2rem;
+text-align: center;
+margin-top: 3rem;
+}
+
+
+
+
+/*..............Blog Page Search bar ............. */
+.search-container{
+width: 90%;
+}
+/*..............Blog Page Search bar ............. */
+
+
+
+
+/*......................Single post.........................*/
+
+.singele-post-container{
+  padding: 1.8rem;
+  width: 90%;
+}
+.singele-post p{
+  line-height: 1.6;
+}
+.singele-post-container .singele-post-thumb {
+  margin-top: 1rem;
+}
+
+
+
+
+
+/*......................Single post end.........................*/
+
+/*Sign up form*/
+.form-section-container{
+  width: 75%;
+  }
+
+}
+.message-icon {
+  font-size: 24px; /* İstediğiniz boyuta ayarlayın */
+  margin-left: 12rem; /* Sağa kaydırma miktarını ayarlayın */
+
+}
+
+.message-icon:hover{
+  color: #765858;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*........................MEDIA SCREEN END.....................*/
+

@@ -11,7 +11,7 @@
                 <!-- <li><a href="services.php">Services</a></li>
                 <li><a href="cotact.php">Contact</a></li> -->
                 <li><a class="" href="sing-in.php">Sign In</a></li>
-                <li><a class='dash' href='../admin/dashboard.php'>Dashboard</a></li>
+                <li><a class='dash' href='../admin/dashboard-login.php'>Dashboard</a></li>
                 <li><a class="log" href="../sing-in.php">Log Out</a></li>
                 <li>
                     <div class="nav-profile">

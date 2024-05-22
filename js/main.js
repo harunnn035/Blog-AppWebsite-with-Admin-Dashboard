@@ -35,3 +35,33 @@ document.querySelector('.inline input').classList.toggle('red')
             return true; // Formun submit işlemine izin ver
         }
     }
+
+
+
+
+    //....................sing-up......................//
+
+    function validateForm() {
+        var ad = document.getElementById("firstNm").value.trim();
+        var soyad = document.getElementById("lastNm").value.trim();
+        var kullanici = document.getElementById("userNm").value.trim();
+        var mail = document.getElementById("email").value.trim();
+        var pass = document.getElementById("pass").value.trim();
+        var pass2 = document.getElementById("pass2").value.trim();  
+    
+        if (ad === "" || soyad === "" || kullanici === "" || mail === "" || pass === "" || pass2 === "" || pass != pass2) {
+            document.getElementById("errorMessage").style.display = "block";
+            
+            
+            return false; // Formun gönderilmesini engelle
+            
+        }
+    
+        // Formun doğru şekilde gönderildiğinde giriş sayfasına yönlendir
+    alert("Kayıt başarılı giriş yapabilirsiniz..");
+        return true;
+    
+       
+        
+    }
+        //....................sing-up-end......................//

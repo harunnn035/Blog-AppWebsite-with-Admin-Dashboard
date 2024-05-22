@@ -7,13 +7,14 @@
     <title>Edit User Role</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-----------CUSTOM CSS LİNK---------------->
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css
+    ">
+    <script defer src="../js/main.js"></script>
 </head>
 
 <body>
 <?php
-  include("includes/navbar.php");
+  include("..includes/navbar.php");
   ?>
     <!---- --------------edit role form----------------------------->
     <section class="form-section">
@@ -57,11 +58,10 @@
 
 
     <?php
-include("includes/footer.php");
+include("../includes/footer.php");
     ?>
 
-    <!------------CUSTOM JS LİNK---------------------->
-    <script src="js/main.js"></script>
+
 </body>
 
 </html>

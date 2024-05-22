@@ -66,27 +66,6 @@
     <!------------------ Post END -------------------->
 
 
-    <!------------------Category Start -------------------->
-    <section class="Category">
-        <div class="category-container container">
-            <a class="category-btn">Discovery</a>
-            <a class="category-btn">Food</a>
-            <a class="category-btn">Science & Technology</a>
-            <a class="category-btn">Photography</a>
-            <a class="category-btn">Travel</a>
-            <a class="category-btn">Music</a>
-            <a class="category-btn">Wild Life</a>
-            <a class="category-btn">World</a>
-            <a class="category-btn">World</a>
-
-
-
-        </div>
-
-    </section>
-    <!------------------ Category End -------------------->
-
-
 
 
     <?php
@@ -94,8 +73,7 @@ include("includes/footer.php");
     ?>
 
 
-    <!------------CUSTOM JS LİNK---------------------->
-    <script src="Assets/main.js"></script>
+
 </body>
 
 </html>

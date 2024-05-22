@@ -62,6 +62,6 @@ include("includes/footer.php");
 include("includes/footer.php");
     ?>
 
-    <script src="js/main.js"></script>
+ 
 </body>
 </html>

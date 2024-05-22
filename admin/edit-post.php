@@ -2,7 +2,7 @@
 session_start();
 
 // Veritabanı bağlantısı
-include("includes/baglan.php");
+include("../includes/baglan.php");
 
 // Post bilgilerini çekmek
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
@@ -62,42 +62,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Blog Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="./index.php" class="logo">
-                <h3 class="bas">Blog Page</h3>
-            </a>
-            <ul class="nav-link">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="cotact.php">Contact</a></li>
-               
-                    <li><a class="" href="sing-in.php">Sign In</a></li>
-               
-                    <li>
-                        <div class="nav-profile">
-                            <div class="profile-img">
-                                <img src="Assets/img/portrait-man-laughing.jpg" alt="" width="" height="">
-                            </div>
-                            <ul>
-                                <li><a class="dash" href="dashboard.php">Dashboard</a></li>
-                                <li><a class="log" href="logout.php">Log Out</a></li>
-                            </ul>
-                        </div>
-                    </li>
-            
-            </ul>
-            <button class="phone-button Open"> <i class="fa fa-bars"></i></button>
-            <button class="phone-button Close"> <i class="fa fa-close"></i></button>
-        </div>
-    </nav>
+<?php
+  include("../includes/navbar.php");
+  ?>
 
     <section class="form-section">
         <div class="container form-section-container">
@@ -133,9 +105,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    
     <?php
-include("includes/footer.php");
+include("../includes/footer.php");
     ?>
 
-    <script src="js/main.js"></script>
 </body>
 </html>

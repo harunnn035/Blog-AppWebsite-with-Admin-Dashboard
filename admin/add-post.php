@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include("includes/baglan.php");
+include("../includes/baglan.php");
 
 $message = ""; // Mesaj değişkeni tanımlama
 
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
         $message = "All fields are required.";
     } else {
         // Resim yükleme işlemi (opsiyonel)
-        $target_dir = "uploads/";
+        $target_dir = "../uploads/";
         $target_file = $target_dir . basename($image);
         move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
 
@@ -45,48 +45,16 @@ $conn->close();
     <title>Responsive Blog Website</title>
 
     <!-- CUSTOM CSS LINK -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- FONT AWESOME LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script defer src="js/main.js"></script>    
+<script defer src="../js/main.js"></script>    
 </head>
 
 <body>
-
-    <!-- NAVIGATION BAR -->
-    <nav>
-        <div class="nav-container">
-            <a href="./index.php" class="logo">
-              <h3 class="bas">Blog Page</h3>
-            </a>
-            <ul class="nav-link">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="cotact.php">Contact</a></li>
-                <li><a class="" href="sing-in.php">Sign In</a></li>
-                <li>
-                    <div class="nav-profile">
-                        <div class="profile-img">
-                            <img src="Assets/img/portrait-man-laughing.jpg" alt="" width="" height="">
-                        </div>
-
-                        <ul>
-                            <li><a class="dash" href="dashboard.php">Dashboard</a></li>
-                            <li><a class="log" href="sing-in.php">Log Out</a></li>
-
-                        </ul>
-
-                    </div>
-                </li>
-            </ul>
-            <button class="phone-button Open"> <i class="fa fa-bars"></i></button>
-            <button class="phone-button Close"> <i class="fa fa-close"></i></button>
-
-        </div>
-    </nav>
-    <!-- END NAVIGATION BAR -->
+<?php
+include('../includes/navbar.php');
+?>
 
     <!-- ADD POST FORM -->
     <section class="form-section">
@@ -129,11 +97,10 @@ $conn->close();
     <!-- END ADD POST FORM -->
 
     <?php
-include("includes/footer.php");
+include("../includes/footer.php");
     ?>
 
-    <!-- CUSTOM JS LINK -->
-    <script src="js/main.js"></script>
+
 </body>
 
 </html>

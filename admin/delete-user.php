@@ -1,5 +1,5 @@
 <?php
-include("includes/baglan.php");
+include("../includes/baglan.php");
 
 // Kullanıcı ID'sini al
 $userId = $_GET['id'];

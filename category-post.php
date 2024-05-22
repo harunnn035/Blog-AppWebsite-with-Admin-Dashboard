@@ -241,8 +241,8 @@ include("includes/footer.php");
     ?>
 
 
-    <!------------CUSTOM JS LİNK---------------------->
-    <script src="Assets/main.js"></script>
+
+
 </body>
 
 </html>

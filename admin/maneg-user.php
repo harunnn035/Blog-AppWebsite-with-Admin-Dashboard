@@ -7,15 +7,15 @@
     <title>Responsive Blog Website</title>
 
     <!-----------CUSTOM CSS LİNK---------------->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-------------FONTAWASOME LİNK------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 <body>
 
 <?php
-  include("includes/navbar.php");
+  include("../includes/navbar.php");
   ?>
 
 
@@ -41,14 +41,7 @@
             <i class="fa fa-users"></i>
             <h5>Manage Users </h5>
         </a></li>
-        <li><a href="add-category.php">
-            <i class="fa fa-mobile"></i>
-            <h5>Add Category </h5>
-        </a></li>
-        <li><a href="maneg-category.php" >
-            <i class="fa fa-list"></i>
-            <h5>Manage category</h5>
-        </a></li>
+     
     </ul>
 
 </aside>
@@ -68,7 +61,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        include("includes/baglan.php");
+                        include("../includes/baglan.php");
 
                         $sql = "SELECT userId, userNm, email, rol FROM users ORDER BY userId DESC";
                         $result = $conn->query($sql);
@@ -98,11 +91,10 @@
 
 
     <?php
-include("includes/footer.php");
+include("../includes/footer.php");
     ?>
 
-    <!------------CUSTOM JS LİNK---------------------->
-    <script src="js/main.js"></script>
+
 </body>
 
 </html>

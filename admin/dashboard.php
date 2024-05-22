@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("includes/baglan.php"); // Include your database connection file
+include("../includes/baglan.php"); // Include your database connection file
 ?>
 
 
@@ -14,15 +14,16 @@ include("includes/baglan.php"); // Include your database connection file
     <title>Responsive Blog Website</title>
 
     <!-----------CUSTOM CSS LİNK---------------->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-------------FONTAWASOME LİNK------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 <body>
 
 <?php
-  include('./includes/navbar.php');
+    include('../includes/navbar.php');
+
   ?>
 
 
@@ -32,11 +33,11 @@ include("includes/baglan.php"); // Include your database connection file
 <div class="container dashboard-container">
 <aside>
     <ul>
-        <li><a href="admin/add-post.php" class="active">
+        <li><a href="../admin/add-post.php" class="active">
             <i class="fa fa-add"></i>
             <h5>Add post</h5>
         </a></li>
-        <li><a href="dashboard.php" class="active">
+        <li><a href="../admin/dashboard.php" class="active">
             <i class="fa fa-pen"></i>
             <h5>Manage post</h5>
         </a></li>
@@ -69,7 +70,7 @@ include("includes/baglan.php"); // Include your database connection file
        
         <?php
 // Veritabanı bağlantısını içerir
-include("includes/baglan.php");
+include("../includes/baglan.php");
 
 $sql = "SELECT * FROM posts ORDER BY created_at DESC"; // Tarihe göre azalan sırada sıralama
 $result = $conn->query($sql);
@@ -101,11 +102,10 @@ $conn->close();
     <!-------------end dashn-boad-->
 
     <?php
-include("includes/footer.php");
+include("../includes/footer.php");
     ?>
 
-<!------------CUSTOM JS LİNK---------------------->
-<script src="js/main.js"></script>
+
 </body>
 
 </html>

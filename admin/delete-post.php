@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("includes/baglan.php"); // Include your database connection file
+include("../includes/baglan.php"); // Include your database connection file
 
 // Check if post ID is provided in the URL
 if(isset($_GET['id']) && !empty($_GET['id'])) {

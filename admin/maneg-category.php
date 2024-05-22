@@ -16,10 +16,10 @@ $result = $conn->query($sql);
     <title>Responsive Blog Website</title>
 
     <!-----------CUSTOM CSS LİNK---------------->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-------------FONTAWASOME LİNK------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 <body>
 <?php
@@ -98,11 +98,8 @@ $result = $conn->query($sql);
 
 
 <?php
-include("includes/footer.php");
+include("..includes/footer.php");
     ?>
----------- End FOOTER -------------------->
 
-<!------------CUSTOM JS LİNK---------------------->
-<script src="js/main.js"></script>
 </body>
 </html>

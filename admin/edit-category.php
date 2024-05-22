@@ -1,6 +1,6 @@
 <?php
 // Bağlantı dosyasını dahil et
-include 'includes/baglan.php';
+include '../includes/baglan.php';
 
 if (isset($_GET['id'])) {
     $category_id = $_GET['id'];
@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Blog Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 <body>
 <?php
@@ -48,9 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     <?php
-include("includes/footer.php");
+include("../includes/footer.php");
     ?>
 
-    <script src="js/main.js"></script>
+
 </body>
 </html>

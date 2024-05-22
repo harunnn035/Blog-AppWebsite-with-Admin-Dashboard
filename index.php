@@ -17,9 +17,11 @@
     <!-- Start Featured -->
     <section class="Featured">
         <div class="container featured-container">
-            <?php
-            session_start();
-            include("includes/baglan.php");
+        <?php
+if(session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+include("includes/baglan.php");
 
             // SQL query: select the featured post
             $featured_sql = "SELECT * FROM posts WHERE is_featured = 1 ORDER BY id DESC LIMIT 1";
@@ -30,7 +32,7 @@
                 echo "<div class='post-thumb'><img src='" . $featured_post['image'] . "'></div>";
                 echo "<div class='post-info'>";
                 echo "<div class='category1'>" . $featured_post['category'] . "</div>";
-                echo "<h2 class='post-title'><a href='/post.php'>" . $featured_post['title'] . "</a></h2>";
+                echo "<h2 class='post-title-featured'><a href='/post.php'>" . $featured_post['title'] . "</a></h2>";
                 echo "<p class='post-body'>" . $featured_post['comment'] . "</p>";
                 echo "<div class='post-profile'>";
                 echo "<div class='post-profile-img'><img src='Assets/img/portrait-white-man-isolated.jpg' alt=''></div>";

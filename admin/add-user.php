@@ -7,15 +7,15 @@
     <title>Responsive Blog Website</title>
 
     <!-----------CUSTOM CSS LİNK---------------->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-------------FONTAWASOME LİNK------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 
 <body>
 <?php
-  include("includes/navbar.php");
+  include("../includes/navbar.php");
   ?>
 
 <!---- --------------sign up form----------------------------->
@@ -48,74 +48,12 @@
 <!---- --------------sign up form----------------------------->
 
 
+<?php
+include('../includes/footer.php');
 
-  <!------------------ Start FOOTER -------------------->
-  <footer>
-    <div class="footer-social">
-        <a href=""><i class="fab fa-facebook"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-linkedin"></i></a>
-
-    </div>
-    <div class="container footer-container">
-        <article>
-            <h4>Categories</h4>
-            <ul>
+?>
 
 
-                <li><a href="">Discovery</a></li>
-                <li><a href="">Food</a></li>
-                <li><a href="">Science & Technology</a></li>
-                <li><a href="">Photography</a></li>
-                <li><a href="">Travel</a></li>
-                <li><a href="">Music</a></li>
-                <li><a href="">Wild Life</a></li>
-                <li><a href="">World</a></li>
-                <li><a href="">World</a></li>
-
-            </ul>
-        </article>
-
-
-
-        <article>
-            <h4>Support</h4>
-            <ul>
-                <li><a href="">Online Support</a></li>
-                <li><a href="">Email</a></li>
-                <li><a href="">Phone Number</a></li>
-                <li><a href="">Social Support</a></li>
-                <li><a href="">Location</a></li>
-            </ul>
-        </article>
-
-
-
-        <article>
-            <h4>Parmalinks</h4>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About </a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Social Support</a></li>
-                <li><a href="">Location</a></li>
-            </ul>
-        </article>
-
-
-
-        
-    </div>
-    <div class="footer-copy">
-        Copyright &copy; Harun Dağ
-    </div>
-</footer>
-<!------------------ End FOOTER -------------------->
-
-
-<!------------CUSTOM JS LİNK---------------------->
-<script src="js/main.js"></script>
 </body>
 
 </html>
@@ -154,7 +92,7 @@
  <?php
  
  // Veritabanı bağlantısı kurun (bağlantı bilgilerinize göre düzenleyin)
-include("includes/baglan.php");
+include("../includes/baglan.php");
  // Formdan gelen verileri al
 // Formdan gelen verileri al
 $userNm = $_POST['userNm'];

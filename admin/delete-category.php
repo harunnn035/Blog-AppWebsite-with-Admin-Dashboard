@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("includes/baglan.php");
+include("../includes/baglan.php");
 
 // Kategori silme işlemi
 if(isset($_GET['id'])) {

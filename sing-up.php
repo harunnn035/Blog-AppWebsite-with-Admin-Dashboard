@@ -44,32 +44,6 @@
 </section>
 
 <!-- CUSTOM JS SCRIPT -->
-<script>
-   function validateForm() {
-    var ad = document.getElementById("firstNm").value.trim();
-    var soyad = document.getElementById("lastNm").value.trim();
-    var kullanici = document.getElementById("userNm").value.trim();
-    var mail = document.getElementById("email").value.trim();
-    var pass = document.getElementById("pass").value.trim();
-    var pass2 = document.getElementById("pass2").value.trim();  
-
-    if (ad === "" || soyad === "" || kullanici === "" || mail === "" || pass === "" || pass2 === "" || pass != pass2) {
-        document.getElementById("errorMessage").style.display = "block";
-        
-        
-        return false; // Formun gönderilmesini engelle
-        
-    }
-
-    // Formun doğru şekilde gönderildiğinde giriş sayfasına yönlendir
-alert("Kayıt başarılı giriş yapabilirsiniz..");
-    return true;
-
-   
-    
-}
-
-</script>
 
 </body>
 </html>

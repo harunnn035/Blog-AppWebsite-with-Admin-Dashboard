@@ -22,7 +22,7 @@ include("includes/baglan.php"); // Include your database connection file
 <body>
 
 <?php
-  include("includes/navbar.php");
+  include('./includes/navbar.php');
   ?>
 
 
@@ -32,7 +32,7 @@ include("includes/baglan.php"); // Include your database connection file
 <div class="container dashboard-container">
 <aside>
     <ul>
-        <li><a href="add-post.php" class="active">
+        <li><a href="admin/add-post.php" class="active">
             <i class="fa fa-add"></i>
             <h5>Add post</h5>
         </a></li>

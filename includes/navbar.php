@@ -2,7 +2,7 @@
    <nav>
         <div class="nav-container">
             <a href="./index.php" class="logo">
-                <h3 class="bas">Blog Page</h3>
+                <h3 class="bas">Blog Page Website</h3>
             </a>
             <ul class="nav-link">
                 <li><a href="index.php">Home</a></li>

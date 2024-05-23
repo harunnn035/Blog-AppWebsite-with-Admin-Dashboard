@@ -3,6 +3,8 @@
 session_start();
 ?>
 
+
+
 <!-- NAV BAR START -->
 <nav>
     <div class="nav-container">
@@ -16,9 +18,10 @@ session_start();
             <!-- <li><a href="services.php">Services</a></li>
             <li><a href="cotact.php">Contact</a></li> -->
             
-            <?php if (isset($_SESSION['userId'])) { ?>
+            <?php 
+            if (isset($_SESSION['userId'])) { ?>
                 <li>
-                    <a href="#">Hoşgeldiniz, <?php echo htmlspecialchars($_SESSION['userNm']); ?></a>
+                    <a href="#">Hoşgeldiniz, <?php echo htmlspecialchars($_SESSION['userId']); ?></a>
                 </li>
                 <li>
                     <a class="dash" href="../admin/dashboard.php">Dashboard</a>

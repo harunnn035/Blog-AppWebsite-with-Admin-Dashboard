@@ -23,6 +23,11 @@ if (isset($_GET['query'])) {
         <style>
 .serh2{
     font-size: 2rem;
+   
+}
+.post-item-search{
+    width: 40%;
+    height: 40%;
 }
             
         </style>
@@ -39,7 +44,7 @@ if (isset($_GET['query'])) {
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     ?>
-                    <article class="post-item">
+                    <article class="post-item-search">
                         <div class="post-thumb"><img src="<?php echo $row['image']; ?>" alt=""></div>
                         <div class="post-info">
                             <a href="category-post.php" class="category-btn"><?php echo $row['category']; ?></a>

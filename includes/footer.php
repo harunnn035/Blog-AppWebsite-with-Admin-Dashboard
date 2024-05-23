@@ -46,8 +46,7 @@
             <h4>Parmalinks</h4>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About </a></li>
-                <li><a href="">Services</a></li>
+                <li><a href="../about.php">About </a></li>
                 <li><a href="">Social Support</a></li>
                 <li><a href="">Location</a></li>
             </ul>

@@ -21,7 +21,7 @@ session_start();
             <?php 
             if (isset($_SESSION['userId'])) { ?>
                 <li>
-                    <a href="#">Hoşgeldiniz, <?php echo htmlspecialchars($_SESSION['userNm']); ?></a>
+                    <a href="#">Welcome, <?php echo htmlspecialchars($_SESSION['userNm']); ?></a>
                 </li>
                 <li>
                     <a class="dash" href="../admin/dashboard.php">Dashboard</a>

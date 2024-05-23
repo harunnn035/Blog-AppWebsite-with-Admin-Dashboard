@@ -21,13 +21,13 @@ session_start();
             <?php 
             if (isset($_SESSION['userId'])) { ?>
                 <li>
-                    <a href="#">Hoşgeldiniz, <?php echo htmlspecialchars($_SESSION['userId']); ?></a>
+                    <a href="#">Hoşgeldiniz, <?php echo htmlspecialchars($_SESSION['userNm']); ?></a>
                 </li>
                 <li>
                     <a class="dash" href="../admin/dashboard.php">Dashboard</a>
                 </li>
                 <li>
-                    <a class="log" href="includes/logout.php">Log Out</a>
+                    <a class="log" href="../admin/logout.php">Log Out</a>
                 </li>
             <?php } else { ?>
                 <li>

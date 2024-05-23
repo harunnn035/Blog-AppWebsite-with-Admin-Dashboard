@@ -13,15 +13,13 @@
 </head>
 
 <body>
-<?php
-  include("..includes/navbar.php");
-  ?>
+
     <!---- --------------edit role form----------------------------->
     <section class="form-section">
         <div class="container form-section-container">
             <h2 class="aca">Edit User Role</h2>
             <?php
-    include("includes/baglan.php");
+    include("../includes/baglan.php");
 
     // Formdan gelen verileri al
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

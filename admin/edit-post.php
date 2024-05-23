@@ -76,28 +76,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2 class="aca">Edit Post</h2>
             <form action="edit-post.php?id=<?php echo $id; ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?php echo $id; ?>">   
-                <input type="text" name="title" placeholder="Title" value="<?php echo htmlspecialchars($title); ?>">
+                <input type="text" name="title" placeholder="Title" required value="<?php echo htmlspecialchars($title); ?>">
                 <select name="category">
-                    <option value="Discovery" <?php if($category == '1') echo 'selected'; ?>>Discovery</option>
-                    <option value="Food" <?php if($category == '2') echo 'selected'; ?>>Food</option>
-                    <option value="Science & Technology" <?php if($category == '3') echo 'selected'; ?>>Science & Technology</option>
-                    <option value="Photography" <?php if($category == '4') echo 'selected'; ?>>Photography</option>
-                    <option value="Travel" <?php if($category == '5') echo 'selected'; ?>>Travel</option>
-                    <option value="Music" <?php if($category == '6') echo 'selected'; ?>>Music</option>
-                    <option value="Sports" <?php if($category == '7') echo 'selected'; ?>>Sports</option>
-                    <option value="                    <option value="8" <?php if($category == '8') echo 'selected'; ?>>World</option>
+                <option value="" disabled selected>Select Category</option>
+                    <option required value="Discovery" <?php if($category == '1') echo 'selected'; ?>>Discovery</option>
+                    <option required value="Food" <?php if($category == '2') echo 'selected'; ?>>Food</option>
+                    <option required value="Science & Technology" <?php if($category == '3') echo 'selected'; ?>>Science & Technology</option>
+                    <option required value="Photography" <?php if($category == '4') echo 'selected'; ?>>Photography</option>
+                    <option required value="Travel" <?php if($category == '5') echo 'selected'; ?>>Travel</option>
+                    <option required value="Music" <?php if($category == '6') echo 'selected'; ?>>Music</option>
+                    <option required value="Sports" <?php if($category == '7') echo 'selected'; ?>>Sports</option>
+                    <option required value="                    <option value="8" <?php if($category == '8') echo 'selected'; ?>>World</option>
 " <?php if($category == '8') echo 'selected'; ?>>World</option>
                     <option value="9" <?php if($category == '9') echo 'selected'; ?>>Wild Life</option>
                 </select>
                 <div class="form-control inline">
-                    <input type="checkbox" id="is-featured" name="is_featured" value="1" <?php echo ($is_featured == 1) ? 'checked' : ''; ?>>
-                    <label for="is-featured">Featured</label>
+                    <input required type="checkbox" id="is-featured" name="is_featured" value="1" <?php echo ($is_featured == 1) ? 'checked' : ''; ?>>
+                    <label  for="is-featured">Featured</label>
                 </div>
                 <div class="form-control">  
                     <label for="thumb">Change Photos</label>
-                    <input type="file" id="thumb" name="image">
+                    <input required  type="file" id="thumb" name="image">
                 </div>
-                <textarea rows="10" placeholder="Comment" name="comment"><?php echo htmlspecialchars($comment); ?></textarea>
+                <textarea rows="10" required placeholder="Comment" name="comment"><?php echo htmlspecialchars($comment); ?></textarea>
                 <button class="btn" name="submit" type="submit">Update Post</button>
             </form>
         </div>

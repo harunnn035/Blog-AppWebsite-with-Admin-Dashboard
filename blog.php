@@ -23,7 +23,7 @@
     <form class="container search-container" method="GET" action="search.php">
         <div>
             <i class="fa fa-search"></i>
-            <input type="search" name="query" placeholder="Search..">
+            <input type="search" name="query" placeholder="Search.." required>
         </div>
         <button class="btn1 " type="submit">Search</button>
     </form>
